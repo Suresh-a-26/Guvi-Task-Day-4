@@ -29,3 +29,32 @@ let myResumeData = {
 
 }
 console.log(myResumeData);
+
+//for loop
+console.log()
+console.log("FOR LOOP")
+let keys = Object.keys(myResumeData);
+for(let i=0;i<keys.length;i++){
+    console.log(`${keys[i]}: ${myResumeData[keys[i]]}`);
+}
+
+// for in loop
+console.log()
+console.log("FOR IN LOOP");
+for(let key in myResumeData){
+    console.log(myResumeData[key]);
+}
+
+// for of loop
+console.log()
+console.log("FOR OF LOOP")
+for(let key of keys){
+    console.log(`${key}: ${myResumeData[key]}`);
+}
+
+// forEach loop
+console.log()
+console.log("FOREACH LOOP")
+keys.forEach(x => console.log(`${x}: ${myResumeData[x]}`));
+
+ 
